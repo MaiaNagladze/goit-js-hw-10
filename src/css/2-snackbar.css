@@ -1,0 +1,52 @@
+.container {
+    padding: 10px;
+}
+.form {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.label-delay {
+    display: flex;
+    flex-direction: column;
+}
+.delay {
+    padding: 8px;
+    height: 20px;
+    border: 1px, solid, black;
+    border-radius: 4px;
+}
+.state {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    height: 80px;
+    border: 1px, solid, black;
+    border-radius: 4px;
+}
+.btn-submit-snackbar {
+    height: 40px;
+    border: 1px, solid, black;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .state {
+        flex-direction: row;
+        font-size: 18px;
+    }
+    .state-label {
+        width: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form { 
+        width: 40%;
+    }
+    .state {
+        font-size: 20px;
+    }
+}
