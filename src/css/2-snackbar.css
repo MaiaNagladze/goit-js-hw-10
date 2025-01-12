@@ -20,11 +20,13 @@
 }
 .state {
     display: flex;
-    flex-direction: column;
     font-size: 16px;
     height: 80px;
     border: 1px, solid, black;
     border-radius: 4px;
+}
+.state-label {
+    width: calc((100% - 32px) / 2);
 }
 .btn-submit-snackbar {
     height: 40px;
@@ -34,12 +36,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .state {
-        flex-direction: row;
         font-size: 18px;
-    }
-    .state-label {
-        width: calc((100% - 32px) / 2);
-    }
+    }   
 }
 
 @media screen and (min-width: 1200px) {
